@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		FC5E09B619E1BFC200124616 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5E09B519E1BFC200124616 /* main.m */; };
 		FC5E09B919E1BFC200124616 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5E09B819E1BFC200124616 /* AppDelegate.m */; };
-		FC5E09BC19E1BFC200124616 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5E09BB19E1BFC200124616 /* ViewController.m */; };
+		FC5E09BC19E1BFC200124616 /* WebBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC5E09BB19E1BFC200124616 /* WebBrowserViewController.m */; };
 		FC5E09BF19E1BFC200124616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC5E09BD19E1BFC200124616 /* Main.storyboard */; };
 		FC5E09C119E1BFC200124616 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC5E09C019E1BFC200124616 /* Images.xcassets */; };
 		FC5E09C419E1BFC200124616 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC5E09C219E1BFC200124616 /* LaunchScreen.xib */; };
@@ -32,8 +32,8 @@
 		FC5E09B519E1BFC200124616 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FC5E09B719E1BFC200124616 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FC5E09B819E1BFC200124616 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FC5E09BA19E1BFC200124616 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FC5E09BB19E1BFC200124616 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FC5E09BA19E1BFC200124616 /* WebBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebBrowserViewController.h; sourceTree = "<group>"; };
+		FC5E09BB19E1BFC200124616 /* WebBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebBrowserViewController.m; sourceTree = "<group>"; };
 		FC5E09BE19E1BFC200124616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC5E09C019E1BFC200124616 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FC5E09C319E1BFC200124616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -83,8 +83,8 @@
 			children = (
 				FC5E09B719E1BFC200124616 /* AppDelegate.h */,
 				FC5E09B819E1BFC200124616 /* AppDelegate.m */,
-				FC5E09BA19E1BFC200124616 /* ViewController.h */,
-				FC5E09BB19E1BFC200124616 /* ViewController.m */,
+				FC5E09BA19E1BFC200124616 /* WebBrowserViewController.h */,
+				FC5E09BB19E1BFC200124616 /* WebBrowserViewController.m */,
 				FC5E09BD19E1BFC200124616 /* Main.storyboard */,
 				FC5E09C019E1BFC200124616 /* Images.xcassets */,
 				FC5E09C219E1BFC200124616 /* LaunchScreen.xib */,
@@ -219,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC5E09BC19E1BFC200124616 /* ViewController.m in Sources */,
+				FC5E09BC19E1BFC200124616 /* WebBrowserViewController.m in Sources */,
 				FC5E09B919E1BFC200124616 /* AppDelegate.m in Sources */,
 				FC5E09B619E1BFC200124616 /* main.m in Sources */,
 			);
