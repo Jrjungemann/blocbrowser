@@ -20,8 +20,6 @@
 @property (nonatomic, strong) UITextField *textField;
 @property (nonatomic, strong) AwesomeFloatingToolbar *awesomeToolbar;
 @property (nonatomic, strong) UIActivityIndicatorView *activityIndicator;
-
-
 @property (nonatomic, assign) NSUInteger frameCount;
 
 @end
@@ -79,6 +77,27 @@
     self.webView.frame = CGRectMake(0, CGRectGetMaxY(self.textField.frame), width, browserHeight);
     
     self.awesomeToolbar.frame = CGRectMake(20, 70, 280, 60);
+}
+
+- (void) floatingToolbar:(AwesomeFloatingToolbar *)toolbar didPinchToolbar:(CGFloat)pinch {
+    
+    CGFloat scale = 1;
+    CGRect oldFrame = self.awesomeToolbar.frame;
+    CGRect newFrame;
+    newFrame.size = CGSizeMake(scale*oldFrame.size.width, oldFrame.size.height);
+    self.awesomeToolbar.frame = newFrame;
+    
+}
+
+- (void) floatingToolbar:(AwesomeFloatingToolbar *)toolbar didTryToPanWithOffset:(CGPoint)offset {
+    CGPoint startingPoint = toolbar.frame.origin;
+    CGPoint newPoint = CGPointMake(startingPoint.x + offset.x, startingPoint.y + offset.y);
+    
+    CGRect potentialNewFrame = CGRectMake(newPoint.x, newPoint.y, CGRectGetWidth(toolbar.frame), CGRectGetHeight(toolbar.frame));
+    
+    if (CGRectContainsRect(self.view.bounds, potentialNewFrame)) {
+        toolbar.frame = potentialNewFrame;
+    }
 }
 
 #pragma mark - UITextFieldDelegate
